@@ -9,6 +9,7 @@ fun readInts(fileName: String) : List<Int> {
     return readLines(fileName).map { s -> s.toInt() }
 }
 
+data class Point<T>(val x: T, val y: T)
 class Stack<T>{
     val elements: MutableList<T> = mutableListOf()
 
